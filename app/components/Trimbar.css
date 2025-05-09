@@ -1,0 +1,84 @@
+/* trim-bar.css */
+
+.trim-bar {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  background-color: #1a1a1a;
+  border: 1px solid #3f3f46;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.trim-bar-thumbnails {
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  display: flex;
+}
+
+.trim-bar-thumbnail {
+  flex: 1;
+  overflow: hidden;
+  border-right: 1px solid #000;
+}
+
+.trim-bar-thumbnail:last-child {
+  border-right: none;
+}
+
+.trim-bar-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.9;
+}
+
+.trim-bar-dimmed {
+  position: absolute;
+  top: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.trim-bar-dimmed-start {
+  left: 0;
+}
+
+.trim-bar-dimmed-end {
+  right: 0;
+}
+
+.trim-bar-selection {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border-top: 2px solid #facc15;
+  border-bottom: 2px solid #facc15;
+  background-color: rgba(250, 204, 21, 0.2);
+  cursor: move;
+}
+
+.trim-bar-handle {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 8px;
+  background-color: #facc15;
+  cursor: ew-resize;
+}
+
+.trim-bar-time {
+  position: absolute;
+  top: -2rem;
+  font-size: 0.75rem;
+  background-color: #facc15;
+  color: #000;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
+}
+
+.trim-bar-selection.no-drag {
+  cursor: default;
+}
+

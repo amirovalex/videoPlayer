@@ -1,12 +1,10 @@
-/* timeline.css */
 
 .timeline {
   position: relative;
   width: 100%;
-  height: 3rem;               /* h-12 */
-  background-color: #27272a;  /* bg-stone-800 */
-  border-radius: 0.25rem;     /* rounded */
-  cursor: pointer;
+  height: 3rem;               
+  background-color: #27272a;  
+  border-radius: 0.25rem;     
 }
 
 .timeline-bar {
@@ -22,9 +20,9 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 0.5rem;            /* h-2 */
+  height: 0.5rem;            
   width: 100%;
-  background-color: #3f3f46; /* bg-stone-700 */
+  background-color: #3f3f46; 
   z-index: 10;
 }
 
@@ -33,7 +31,7 @@
   top: 0;
   left: 0;
   height: 0.5rem;
-  background-color: #fde047; /* bg-yellow-300 */
+  background-color: #fde047;
   z-index: 30;
 }
 
@@ -42,13 +40,13 @@
   bottom: 0;
   width: 100%;
   background-color: #27272a;
-  padding: 0.5rem 1rem;       /* py-2 px-4 */
+  padding: 0.5rem 1rem;       
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: 10;
   color: #ffffff;
-  font-size: 0.875rem;        /* text-sm */
+  font-size: 0.875rem;        
 }
 
 .timeline-button {
@@ -60,9 +58,9 @@
 }
 
 .timeline-button:hover {
-  opacity: 0.8;               /* hover:opacity-80 */
+  opacity: 0.8;              
 }
 
 .timeline-time {
-  font-size: 0.75rem;         /* text-xs */
+  font-size: 0.75rem;         
 }

@@ -1,5 +1,5 @@
 'use client'
-import React, { useRef, useState, useEffect, use } from 'react'
+import React, { useRef, useState, useEffect } from 'react'
 import TrimBar from './TrimBar'
 import Timeline from './Timeline'
 import { extractCanvasThumbnails } from '../utils/utils' // adjust path
@@ -17,7 +17,7 @@ export default function VideoPlayer() {
   const [thumbnails, setThumbnails] = useState<string[]>([])
 
   // Seek the video to a specific time.
-  const handleCurrentTime = (t:any) => {
+  const handleCurrentTime = (t:number) => {
     if (videoRef.current) {
       videoRef.current.currentTime = t
     }
